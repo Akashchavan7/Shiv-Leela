@@ -34,7 +34,7 @@ export function HeroSection({ hero }: HeroSectionProps) {
             <h1 className="max-w-sm text-5xl font-semibold leading-none text-cream">
               {hero.title}
             </h1>
-            <p className="mt-4 max-w-md text-base text-white/78">
+            <p className="mt-4 max-w-md text-base text-white/80">
               {hero.subtitle}
             </p>
             <div className="mt-6 flex flex-wrap gap-3">

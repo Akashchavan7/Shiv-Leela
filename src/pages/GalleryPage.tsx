@@ -15,7 +15,7 @@ export function GalleryPage() {
           <div>
             <span className="section-label">Media Lounge</span>
             <h1 className="text-4xl font-semibold text-cream">Gallery & Videos</h1>
-            <p className="mt-3 max-w-2xl text-sm text-white/72">
+            <p className="mt-3 max-w-2xl text-sm text-white/70">
               A dedicated media wall designed for mobile viewing, with large
               tap targets and clean previews.
             </p>

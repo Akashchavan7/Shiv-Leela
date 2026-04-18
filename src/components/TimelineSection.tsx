@@ -47,7 +47,7 @@ export function TimelineSection({ items }: TimelineSectionProps) {
                 <h3 className="mt-2 text-xl font-semibold text-cream">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-white/72">{item.description}</p>
+                <p className="mt-2 text-sm text-white/70">{item.description}</p>
               </Card>
             </motion.div>
           );

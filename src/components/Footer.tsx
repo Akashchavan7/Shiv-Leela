@@ -27,7 +27,7 @@ export function Footer({ contacts, socialLinks }: FooterProps) {
               href={contact.href}
               target={contact.href.startsWith("http") ? "_blank" : undefined}
               rel={contact.href.startsWith("http") ? "noreferrer" : undefined}
-              className="rounded-2xl border border-white/10 bg-midnight/40 px-4 py-4 text-sm font-medium text-white/82 hover:border-gold/40 hover:text-white"
+              className="rounded-2xl border border-white/10 bg-midnight/40 px-4 py-4 text-sm font-medium text-white/80 hover:border-gold/40 hover:text-white"
             >
               {contact.label}
             </a>

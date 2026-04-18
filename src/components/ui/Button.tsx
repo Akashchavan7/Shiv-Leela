@@ -37,15 +37,19 @@ export function Button({
   const classes = `${baseStyles} ${variants[variant]} ${className}`.trim();
 
   if ("href" in props && props.href) {
+    const anchorProps = props as ButtonAsAnchor;
+
     return (
-      <a className={classes} {...props}>
+      <a className={classes} {...anchorProps}>
         {children}
       </a>
     );
   }
 
+  const buttonProps = props as ButtonAsButton;
+
   return (
-    <button className={classes} {...props}>
+    <button className={classes} {...buttonProps}>
       {children}
     </button>
   );

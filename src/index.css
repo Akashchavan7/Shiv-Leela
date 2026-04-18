@@ -50,7 +50,7 @@ body.modal-open {
   }
 
   p {
-    @apply leading-7 text-white/78;
+    @apply leading-7 text-white/80;
   }
 
   a {
@@ -60,7 +60,9 @@ body.modal-open {
 
 @layer components {
   .glass-panel {
-    @apply border border-white/12 bg-white/8 backdrop-blur-xl;
+    @apply border backdrop-blur-xl;
+    border-color: rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 20px 60px rgba(7, 5, 8, 0.24);
   }
 
@@ -73,6 +75,8 @@ body.modal-open {
   }
 
   .section-label {
-    @apply mb-3 inline-flex rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.3em] text-gold;
+    @apply mb-3 inline-flex rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.3em] text-gold;
+    border-color: rgba(216, 176, 111, 0.4);
+    background-color: rgba(216, 176, 111, 0.1);
   }
 }
