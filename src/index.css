@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #fffaf5;
+  background:
+    radial-gradient(circle at top, rgba(216, 176, 111, 0.18), transparent 32%),
+    linear-gradient(180deg, #130f14 0%, #1b151e 38%, #130f14 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(245, 215, 203, 0.09), transparent 24%),
+    linear-gradient(180deg, #130f14 0%, #1d151c 45%, #130f14 100%);
+  color: #fffaf5;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(216, 176, 111, 0.35);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-[0.02em];
+  }
+
+  p {
+    @apply leading-7 text-white/78;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/12 bg-white/8 backdrop-blur-xl;
+    box-shadow: 0 20px 60px rgba(7, 5, 8, 0.24);
+  }
+
+  .section-heading {
+    @apply text-3xl font-semibold text-cream sm:text-4xl;
+  }
+
+  .section-copy {
+    @apply text-sm text-white/70 sm:text-base;
+  }
+
+  .section-label {
+    @apply mb-3 inline-flex rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.3em] text-gold;
+  }
+}
